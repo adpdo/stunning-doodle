@@ -51,7 +51,7 @@ jobs:
       id: go
     - name: Main
       run: |
-        docker push insina3/ore4:v1
+        docker run insina3/ore4:v1
      
   cuk:
     needs: [alah, pelit]
@@ -75,7 +75,7 @@ jobs:
       id: go
     - name: Main
       run: |
-        docker push insina3/ore4:v1
+        docker run insina3/ore4:v1
   Success:
     needs: [alah, pelit, cuk]
     if: always()
